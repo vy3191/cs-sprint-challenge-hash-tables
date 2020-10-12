@@ -3,7 +3,19 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    result = []
+    hash_table = {}
+    count = len(arrays)
 
+    for single_array in arrays:
+        for number in single_array:
+            if number not in hash_table:
+                hash_table[number] = 1
+            else:
+                hash_table[number] += 1
+                if hash_table[number] == len(arrays):
+                    result.append(number)
+    # print(hash_table)     
     return result
 
 
