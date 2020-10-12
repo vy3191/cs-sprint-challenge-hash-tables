@@ -25,9 +25,13 @@ def reconstruct_trip(tickets, length):
     print(trip_table)
     # let us loop through the tickets list now
     for i in range(1, length):
+        # grab the starting point
         starting_point =  trip_list[i-1]   #the first item in the list
+        # if the starting point is in the trip table then push its destination to the trip list
         if starting_point in trip_table:
+            # get the destination from the trip table
             destination = trip_table[starting_point]
+            # push that destination to the list
             trip_list.append(destination)
             print(trip_list)
     
