@@ -18,7 +18,7 @@ def has_negatives(a):
             # if find the negative number in the table then push it to the list
             # Make sure to push only positive number so that the test pass
             if -number in numbers_table:
-                result.append(abs(number))
+                result.append(abs(number)) # tried -(-number) but it did not work. absolute value of a number gives you the positive value
 
     return result
 
