@@ -14,7 +14,6 @@ def has_negatives(a):
         if number not in numbers_table and number != 0:
             # then add that number to the table
             numbers_table[number] = 1
-            # print(numbers_table)
             # if find the negative number in the table then push it to the list
             # Make sure to push only positive number so that the test pass
             if -number in numbers_table:

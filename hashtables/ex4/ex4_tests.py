@@ -13,6 +13,7 @@ class TestEx4(unittest.TestCase):
         self.assertTrue(result == [])
 
         result = has_negatives([-1,-2,1,2,3,4,-4])
+        # print(result)
         result.sort()
         self.assertTrue(result == [1,2,4])
 
@@ -21,7 +22,7 @@ class TestEx4(unittest.TestCase):
         a += [-1,-2,-3]
 
         result = has_negatives(a)
-        print(result)
+        # print(result)
         result.sort()
         self.assertTrue(result == [1,2,3])
 
