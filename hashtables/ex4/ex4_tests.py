@@ -21,6 +21,7 @@ class TestEx4(unittest.TestCase):
         a += [-1,-2,-3]
 
         result = has_negatives(a)
+        print(result)
         result.sort()
         self.assertTrue(result == [1,2,3])
 
