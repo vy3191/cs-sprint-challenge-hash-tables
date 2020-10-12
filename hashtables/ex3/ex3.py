@@ -12,7 +12,7 @@ def intersection(arrays):
             if number not in hash_table:
                 hash_table[number] = 1
             else:
-                hash_table[number] += 1
+                hash_table[number] += 1  # if there are three arrays inside the main array the number should repeat that many times.
                 if hash_table[number] == len(arrays):
                     result.append(number)
     # print(hash_table)     

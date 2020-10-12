@@ -13,14 +13,14 @@ def reconstruct_trip(tickets, length):
     # Create a hash table as per hint in the README
     # We can hash each ticket such that the starting location is the key and
     # the destination is the value
-    trip_table = {}
+    trip_table = {}     # dict = {start:destination}
     for i in range(0, length):
         starting_location = tickets[i].source
         destination = tickets[i].destination
         trip_table[starting_location] = destination
 
     # let us create a list which contains the starting point
-    starting_source = trip_table['NONE']
+    starting_source = trip_table['NONE']   # 'LAX'
     trip_list = [starting_source]
     print(trip_table)
     # let us loop through the tickets list now
